@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Predict</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        body
+        {
+        background-image: url("http://i0.wp.com/www.dairyproducts.it/eng/wp-content/uploads/2016/05/Latte.jpg?fit=1200%2C842");
+        background-size: cover;
+        }
+        h3.big
+        {
+        line-height: 1.8;
+        }
+    </style>
+</head>
+<body>
+    <br>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-md-12 bg-light text-right">
+                <a href="/" class="btn btn-info btn-lg">Home</a>
+                <a href="/predict" class="btn btn-primary disabled btn-lg">Predict</a>
+            </div>
+        </div>
+
+        <br>
+        <h1><strong>Milk Grading System</strong></h1><br>
+         <h4>
+         <form action="/pred", method="POST">
+              <div class="form-group row">
+                  <div class="col-md-3">
+                      <label for="pH">pH</label>
+                      <input type="number" class="form-control" name="pH"min=3 max=10 step=0.01 id="pH"  placeholder="pH" required="required"/>
+                  </div>
+              </div>
+               <div class="form-group row">
+                   <div class="col-md-3">
+                       <label for="Temprature">Temprature</label>
+                       <input type="number" class="form-control" name="Temprature" id="Temprature"  placeholder="Temprature" required="required"/>
+                   </div>
+               </div>
+                <div class="form-group row">
+                    <div class="col-md-3">
+                        <label for="Taste">Taste</label>
+                        <input type="number" class="form-control" name="Taste" id="Taste"  placeholder="Taste" required="required"/>
+                    </div>
+                </div>
+                 <div class="form-group row">
+                     <div class="col-md-3">
+                         <label for="Odor">Odor </label>
+                         <input type="number" class="form-control" name="Odor" id="Odor"  placeholder="Odor" required="required"/>
+                     </div>
+                 </div>
+                  <div class="form-group row">
+                      <div class="col-md-3">
+                          <label for="Fat">Fat</label>
+                          <input type="number" class="form-control" name="Fat" id="Fat"  placeholder="Fat" required="required"/>
+                      </div>
+                  </div>
+                   <div class="form-group row">
+                       <div class="col-md-3">
+                           <label for="Turbidity">Turbidity</label>
+                           <input type="number" class="form-control" name="Turbidity" id="Turbidity"  placeholder="Turbidity" required="required"/>
+                       </div>
+                   </div>
+                    <div class="form-group row">
+                        <div class="col-md-3">
+                            <label for="Colour">Colour</label>
+                            <input type="number" class="form-control" name="Colour" id="Colour"  placeholder="Colour" required="required"/>
+                        </div>
+                    </div>
+                    
+            <button type="submit" class="btn btn-success btn-lg">Submit</button>
+
+
+
+        </form>
+        <br>
+        </h4>
+    </div>
+
+</body>
+</html>
